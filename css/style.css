@@ -1,0 +1,256 @@
+@charset "UTF-8";
+ 
+/*---------- INDISPENSABLES -----------------------*/
+    
+    /* Boites */
+   
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+    /* Flottants */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /* Navigations*/
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Cacher du texte*/
+.no_text{
+    font-size: 0;
+    margin: 0;
+}
+
+/* Supprimer la ligne de 2px en dessous des images */
+img{
+    display: block;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ----- GRILLE ----- */
+
+/* ----- POLICES ET TEXTES ----- */
+
+html{
+    font-size: 75%; /* 1rem devient 12px */
+}
+
+body{
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 400;
+}
+
+/* ----- BOUTONS ET CALL TO ACTION ----- */
+
+.btn-1,
+.btn-1:visited{
+    background-color: #565d64;
+    padding: 15px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+    border: 1px solid transparent;
+}
+
+.btn-1:hover,
+.btn-1:focus,
+.btn-1:active{
+    background-color: #fff;
+    color: #565d64;
+    border: 1px solid #565d64;
+}
+
+/*==========================================================================*/
+
+body{
+    
+}
+
+/* ----- HEADER ----- */
+
+header{
+    background: transparent url(../images/bg_header.jpg) no-repeat;
+    background-size: cover;
+    background-color: cadetblue;
+    background-position: top center;
+    height: 100px;
+    padding: 25px 0;
+    color: #fff;
+}
+
+header.header_home {
+    background-position: bottom center;
+    height: 600px;
+}
+
+/* Topbar */
+
+section#topbar{
+   /*background: orange;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social nav */
+
+#social_nav a,
+#social_nav a:visited{
+
+    /*background: red;*/
+    display: block; /* Pour que les a n'aient pas la taille des mots mais du block ( de la colonne) */
+    height: 60px;
+    transition: all .3s;
+}
+
+#social_nav a#picto_fb{
+    background: transparent url(../images/picto_fb.png) no-repeat center;
+}
+
+#social_nav a#picto_tw{
+    background: transparent url(../images/picto_tw.png) no-repeat center;
+}
+
+#social_nav a#picto_in{
+    background: transparent url(../images/picto_in.png) no-repeat center;
+}
+
+#social_nav a:hover,
+#social_nav a:focus,
+#social_nav a:active{
+    opacity: 0.5;
+    
+}
+
+/* Titres */
+
+header h2{
+    font-size: 3.01em;
+    margin: 125px 0 5px;
+}
+
+header h3{
+    font-size: 1.34em;
+    letter-spacing: .125em;
+    margin: 0;
+}
+
+/* ----- MAIN ----- */
+
+/*main{
+    background-color: bisque;
+}*/
+
+/* Galerie */
+
+section#gallery{
+    background-color: #eee;
+    padding: 100px 0;
+}
+
+#gallery div#gallery_content{
+    /*background-color: aquamarine;*/
+    flex-wrap: wrap;
+}
+
+#gallery_content h2{
+    width: inherit;
+    color: #808080;
+    font-size: 1em;
+    letter-spacing: .25em;
+    margin: 0 0 35px;
+}
+
+/* Articles */
+
+article.miniature{
+    /*background: orange;*/
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+p.likes{
+    color: #fff;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    text-transform: uppercase;
+}
+
+div.infos{
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    color: #808080;
+    font-style: italic;
+}
+
+div.infos h3{
+    font-size: 1em;
+    margin: 0 0 5px;
+}
+
+div.infos p{
+    margin: 5px 0;
+}
+
+div.infos p:last-of-type{ /* selection du dernier élément */
+    margin-bottom: 0;
+}
+
+/* Contact */
+
+section#contact{
+    /*background-color: chocolate;*/
+    padding: 40px 0 100px;
+    color: #565d64;
+}
+
+#contact h2{
+    font-size: 3.01em;
+    margin-bottom: 20px;
+}
+
+#contact h3{
+    margin-top: 0;
+    margin-bottom: 35px;
+    
+}
+
+
+/* ----- FOOTER ----- */
+
+footer{
+    /*background-color: chartreuse;*/
+    border-top: 1px solid #565d64;
+    padding-bottom: 50px;
+    color: #565d64;
+    text-transform: uppercase;
+    font-size: 1.34em
+}
